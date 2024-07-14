@@ -5,7 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-Clone the repository
+Clone Repository: Clone this repository to your local machine using git clone
+Install Dependencies: Install the required dependencies by running npm install in the project directory.[npm install]
+Install Ganache and Truffle: Install Ganache and Truffle by running  [npm install -g truffle ganache-cli] (Ganache is a part of the Truffle suite of tools).
+Run Ganache: Run Ganache by executing ganache-cli in a separate terminal window. [ganache-cli --port 7545] 
+Connect Truffle to Network: Connect Truffle to the network by running truffle console and then truffle migrate to deploy the contracts. [truffle migrate --network development]
+ By connecting truffle to network we can get the contract address and  it should be paste in DocumentStorage.js path:src/DocumentStorage.js then the build/contracts in src should be fully deleted and build from public should be moved into src.
+Start Application: Finally, start the application by running npm start.
 ### `npm start`
 
 Runs the app in the development mode.\
