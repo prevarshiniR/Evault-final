@@ -3,7 +3,7 @@ import DocumentStorage from './build/contracts/DocumentStorage.json';
 
 const instance = new web3.eth.Contract(
   DocumentStorage.abi,
-  '0x3c329516f6A9efA9Ce1Fe0D702E9fA72537c02e2'
+  '0x48c764f753EF2C06A4b0aC69d353C8DF7EFF1414'
 );
 
 export default instance;

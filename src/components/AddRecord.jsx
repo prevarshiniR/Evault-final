@@ -27,9 +27,10 @@ const AddRecord = () => {
       console.log('hash', hash);
       await documentStorage.methods.storeDocument(hash).send({ from: account, gas: 20000000n });
       setStatus('Document uploaded successfully!');
+      await getDocuments();
     };
     reader.readAsArrayBuffer(file);
-    await getDocuments();
+    
   }
 
   const getDocuments = async () => {
@@ -42,6 +43,7 @@ const AddRecord = () => {
       console.log(e)
     }
   }
+  console.log(documents)
 
   return (
     <div>
