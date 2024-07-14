@@ -50,11 +50,6 @@ const AddRecord = () => {
       <hr />
       <h2>Documents</h2>
       <p>{status}</p>
-      <input
-        type="text"
-        placeholder="Enter document hash"
-        onBlur={(event) => getDocuments(event.target.value)}
-      />
       <ul>
       {documents.map((doc, index) => (
         doc.map((d, i) => (
