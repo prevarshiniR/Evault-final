@@ -14,6 +14,7 @@ const AddRecord = () => {
       setAccount(accounts[0]);
     }
     loadAccount();
+    getDocuments();
   }, []);
 
   const fileCapture = async (e) => {
